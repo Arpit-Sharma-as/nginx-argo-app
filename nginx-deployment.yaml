@@ -18,3 +18,9 @@ spec:
         image: nginx:1.21
         ports:
         - containerPort: 80
+
+metadata:
+ annotations:
+  argocd-image-updater.argoproj.io/image-list: nginx=nginx
+  argocd-image-updater.argoproj.io/nginx.update-strategy: latest
+
