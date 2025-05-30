@@ -1,0 +1,24 @@
+config:
+  writeBackMethod: git
+  git:
+    repositories:
+      - url: https://github.com/Arpit-Sharma-as/nginx-argo-app
+        username: Arpit-Sharma-as
+        password: <YOUR_PAT>
+
+        name: nginx-repo
+  argocd:
+    serverAddress: http://argocd-server.argocd.svc
+    grpcWeb: true
+
+extraEnv:
+  - name: GIT_USERNAME
+    valueFrom:
+      secretKeyRef:
+        name: git-creds
+        key: username
+  - name: GIT_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: git-creds
+        key: password
