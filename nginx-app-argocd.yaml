@@ -9,9 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/Arpit-Sharma-as/nginx-argo-app/nginx-app-argocd.yaml
+    repoURL: https://github.com/Arpit-Sharma-as/nginx-argo-app
     targetRevision: HEAD
-    path: .
+    path: manifests
   syncPolicy:
     automated:
       prune: true
