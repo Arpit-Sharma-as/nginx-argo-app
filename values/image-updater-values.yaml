@@ -4,12 +4,23 @@ config:
     repositories:
       - url: https://github.com/Arpit-Sharma-as/nginx-argo-app
         username: Arpit-Sharma-as
-        password: <PAT>
-
         name: nginx-repo
+
   argocd:
     serverAddress: http://argocd-server.argocd.svc
     grpcWeb: true
+
+  registries:
+    - name: Docker Hub
+      api_url: https://index.docker.io/v1/
+      prefix: docker.io
+      credentials:
+        usernameSecret:
+          name: dockerhub-creds
+          key: username
+        passwordSecret:
+          name: dockerhub-creds
+          key: password
 
 extraEnv:
   - name: GIT_USERNAME
