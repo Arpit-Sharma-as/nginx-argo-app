@@ -6,6 +6,11 @@ config:
         username: Arpit-Sharma-as
         name: nginx-repo
 
+  image:
+  repository: docker.io/bucket23/nginx
+  tag: "1.21"  
+
+
   argocd:
     serverAddress: http://argocd-server.argocd.svc
     grpcWeb: true
