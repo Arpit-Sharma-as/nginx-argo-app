@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/Arpit-Sharma-as/nginx-argo-app
     targetRevision: HEAD
-    path: .
+    path: apps/nginx-app
   syncPolicy:
     automated:
       prune: true
