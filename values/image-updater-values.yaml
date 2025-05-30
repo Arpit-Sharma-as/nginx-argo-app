@@ -4,7 +4,7 @@ config:
     repositories:
       - url: https://github.com/Arpit-Sharma-as/nginx-argo-app
         username: Arpit-Sharma-as
-        password: <YOUR_PAT>
+        password: <PAT>
 
         name: nginx-repo
   argocd:
