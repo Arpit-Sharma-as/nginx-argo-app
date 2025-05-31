@@ -1,0 +1,6 @@
+resources:
+  - base/nginx-deployment.yaml
+
+images:
+  - name: docker.io/bucket23/nginx
+    newTag: 1.21
