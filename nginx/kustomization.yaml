@@ -4,4 +4,4 @@ resources:
 
 images:
   - name: docker.io/bucket23/nginx
-    newTag: 1.21
+    newTag: "1.21"
