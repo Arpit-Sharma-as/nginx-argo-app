@@ -1,5 +1,6 @@
 resources:
-  - base/nginx-deployment.yaml
+  - deployment.yaml
+  - service.yaml
 
 images:
   - name: docker.io/bucket23/nginx
